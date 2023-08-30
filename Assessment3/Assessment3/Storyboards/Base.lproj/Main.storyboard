@@ -11,7 +11,7 @@
         <!--Honey-Do-->
         <scene sceneID="u8j-9p-UQh">
             <objects>
-                <tableViewController id="JkW-CM-I8b" customClass="HoneyDoListTableViewController" customModule="Assessment3" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="JkW-CM-I8b" customClass="HoneyListTableViewController" customModule="Assessment3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="wgf-la-fNB">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -30,7 +30,7 @@
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="filled" title="Create"/>
                                     <connections>
-                                        <action selector="createHoneyDo:" destination="JkW-CM-I8b" eventType="touchUpInside" id="4B8-z4-TQD"/>
+                                        <action selector="createHoneyButtonTapped:" destination="JkW-CM-I8b" eventType="touchUpInside" id="6W6-xf-Abe"/>
                                     </connections>
                                 </button>
                             </subviews>
@@ -46,7 +46,7 @@
                             </constraints>
                         </view>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="createCell" rowHeight="100" id="W5z-S1-yxt" customClass="HoneyTableViewCell" customModule="Assessment3" customModuleProvider="target">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="createCell" rowHeight="100" id="W5z-S1-yxt" customClass="HoneyListTableViewCell" customModule="Assessment3" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="115" width="393" height="100"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="W5z-S1-yxt" id="ldP-zN-lJ3">
@@ -62,7 +62,7 @@
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="checkmark.diamond" catalog="system"/>
                                             <connections>
-                                                <action selector="completeButtonTapped:" destination="W5z-S1-yxt" eventType="touchUpInside" id="EPr-5H-Sab"/>
+                                                <action selector="isCompleteButtonTapped:" destination="W5z-S1-yxt" eventType="touchUpInside" id="JD9-tb-ssK"/>
                                             </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="V2O-aP-hJE">
@@ -94,9 +94,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <outlet property="completeButton" destination="Zqn-KP-Bwz" id="v3R-Jh-P10"/>
-                                    <outlet property="nameLabel" destination="l86-fn-qrb" id="QP1-rO-CLx"/>
-                                    <outlet property="tasksCountLabel" destination="ia7-NP-w0m" id="Cr1-Xd-B3M"/>
+                                    <outlet property="honeyCountLabel" destination="ia7-NP-w0m" id="bD0-d6-taL"/>
+                                    <outlet property="isCompleteButton" destination="Zqn-KP-Bwz" id="KUa-aV-e5Z"/>
+                                    <outlet property="itemNameLabel" destination="l86-fn-qrb" id="hV2-V1-INQ"/>
                                     <segue destination="9Wm-uW-dZB" kind="show" identifier="toDetailVC" id="1NE-Hl-eHG"/>
                                 </connections>
                             </tableViewCell>
@@ -108,17 +108,17 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Honey-Do" id="fjB-WK-arv"/>
                     <connections>
-                        <outlet property="nameTextField" destination="G0R-f9-PhP" id="4Tu-48-euw"/>
+                        <outlet property="honeyNameTextField" destination="G0R-f9-PhP" id="qWt-wa-ev6"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKq-XW-18A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1196.1832061068701" y="-50"/>
         </scene>
-        <!--Honey Do Detail Table View Controller-->
+        <!--Honey Detail Table View Controller-->
         <scene sceneID="P0R-8b-czW">
             <objects>
-                <tableViewController id="9Wm-uW-dZB" customClass="HoneyDoDetailTableViewController" customModule="Assessment3" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="9Wm-uW-dZB" customClass="HoneyDetailTableViewController" customModule="Assessment3" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="Xmg-Tn-eKC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -136,6 +136,9 @@
                                     <rect key="frame" x="326" y="12" width="55" height="41"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="filled" title="Add"/>
+                                    <connections>
+                                        <action selector="addChoreButtonTapped:" destination="9Wm-uW-dZB" eventType="touchUpInside" id="yCi-kY-lwy"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="systemBrownColor"/>
@@ -171,6 +174,9 @@
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="checkmark.square" catalog="system"/>
+                                            <connections>
+                                                <action selector="choreIsCompletedButtonTapped:" destination="47x-eE-EeN" eventType="touchUpInside" id="Jsm-Vf-tyY"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <constraints>
@@ -184,6 +190,10 @@
                                         <constraint firstItem="a05-QH-Akr" firstAttribute="leading" secondItem="0Gw-Ks-lyJ" secondAttribute="trailing" constant="4" id="qEb-xX-Fbg"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="choreIsCompletedButton" destination="a05-QH-Akr" id="ZYw-95-nVd"/>
+                                    <outlet property="choreNameLabel" destination="0Gw-Ks-lyJ" id="uju-Gs-gnj"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -192,6 +202,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="IG0-ct-ocW"/>
+                    <connections>
+                        <outlet property="choreNameLabel" destination="SZe-Tf-fsJ" id="bsR-fN-5SS"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lLf-dS-Pzs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

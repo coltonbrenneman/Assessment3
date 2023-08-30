@@ -10,22 +10,28 @@
 		445EC2EF2A9FD8D900086EC1 /* ChoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EC2EE2A9FD8D900086EC1 /* ChoreController.swift */; };
 		445EC2F12A9FD93900086EC1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EC2F02A9FD93900086EC1 /* Item.swift */; };
 		445EC2F32A9FD9F800086EC1 /* Honey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EC2F22A9FD9F800086EC1 /* Honey.swift */; };
+		445EC2F52A9FDC8400086EC1 /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EC2F42A9FDC8400086EC1 /* ItemController.swift */; };
+		445EC2F72A9FDE5100086EC1 /* HoneyListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EC2F62A9FDE5100086EC1 /* HoneyListTableViewController.swift */; };
+		445EC2F92A9FDE8600086EC1 /* HoneyListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EC2F82A9FDE8600086EC1 /* HoneyListTableViewCell.swift */; };
+		445EC2FB2A9FE3E100086EC1 /* HoneyDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EC2FA2A9FE3E100086EC1 /* HoneyDetailTableViewController.swift */; };
+		445EC2FD2A9FE3F100086EC1 /* HoneyDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EC2FC2A9FE3F100086EC1 /* HoneyDetailTableViewCell.swift */; };
 		44FA4E242A3287B600061F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E232A3287B600061F12 /* AppDelegate.swift */; };
 		44FA4E262A3287B600061F12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E252A3287B600061F12 /* SceneDelegate.swift */; };
 		44FA4E2B2A3287B600061F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FA4E292A3287B600061F12 /* Main.storyboard */; };
 		44FA4E2D2A3287B800061F12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44FA4E2C2A3287B800061F12 /* Assets.xcassets */; };
 		44FA4E302A3287B800061F12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FA4E2E2A3287B800061F12 /* LaunchScreen.storyboard */; };
 		44FA4E3A2A32883800061F12 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E392A32883800061F12 /* Constants.swift */; };
-		44FA4E402A328E7A00061F12 /* HoneyDoListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E3F2A328E7A00061F12 /* HoneyDoListTableViewController.swift */; };
-		44FA4E422A32900600061F12 /* HoneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E412A32900600061F12 /* HoneyTableViewCell.swift */; };
-		44FA4E472A32E81500061F12 /* HoneyDoDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E462A32E81500061F12 /* HoneyDoDetailTableViewController.swift */; };
-		44FA4E492A32E85F00061F12 /* HoneyDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E482A32E85F00061F12 /* HoneyDetailTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		445EC2EE2A9FD8D900086EC1 /* ChoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreController.swift; sourceTree = "<group>"; };
 		445EC2F02A9FD93900086EC1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		445EC2F22A9FD9F800086EC1 /* Honey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Honey.swift; sourceTree = "<group>"; };
+		445EC2F42A9FDC8400086EC1 /* ItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
+		445EC2F62A9FDE5100086EC1 /* HoneyListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyListTableViewController.swift; sourceTree = "<group>"; };
+		445EC2F82A9FDE8600086EC1 /* HoneyListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyListTableViewCell.swift; sourceTree = "<group>"; };
+		445EC2FA2A9FE3E100086EC1 /* HoneyDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyDetailTableViewController.swift; sourceTree = "<group>"; };
+		445EC2FC2A9FE3F100086EC1 /* HoneyDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyDetailTableViewCell.swift; sourceTree = "<group>"; };
 		44FA4E202A3287B600061F12 /* Assessment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FA4E232A3287B600061F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44FA4E252A3287B600061F12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,10 +40,6 @@
 		44FA4E2F2A3287B800061F12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44FA4E312A3287B800061F12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44FA4E392A32883800061F12 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
-		44FA4E3F2A328E7A00061F12 /* HoneyDoListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyDoListTableViewController.swift; sourceTree = "<group>"; };
-		44FA4E412A32900600061F12 /* HoneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyTableViewCell.swift; sourceTree = "<group>"; };
-		44FA4E462A32E81500061F12 /* HoneyDoDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyDoDetailTableViewController.swift; sourceTree = "<group>"; };
-		44FA4E482A32E85F00061F12 /* HoneyDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyDetailTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,8 +56,8 @@
 		441F90D42A982BF5006E209E /* HoneyList */ = {
 			isa = PBXGroup;
 			children = (
-				44FA4E3F2A328E7A00061F12 /* HoneyDoListTableViewController.swift */,
-				44FA4E412A32900600061F12 /* HoneyTableViewCell.swift */,
+				445EC2F62A9FDE5100086EC1 /* HoneyListTableViewController.swift */,
+				445EC2F82A9FDE8600086EC1 /* HoneyListTableViewCell.swift */,
 			);
 			path = HoneyList;
 			sourceTree = "<group>";
@@ -63,8 +65,8 @@
 		441F90D52A982C05006E209E /* HoneyDetail */ = {
 			isa = PBXGroup;
 			children = (
-				44FA4E462A32E81500061F12 /* HoneyDoDetailTableViewController.swift */,
-				44FA4E482A32E85F00061F12 /* HoneyDetailTableViewCell.swift */,
+				445EC2FA2A9FE3E100086EC1 /* HoneyDetailTableViewController.swift */,
+				445EC2FC2A9FE3F100086EC1 /* HoneyDetailTableViewCell.swift */,
 			);
 			path = HoneyDetail;
 			sourceTree = "<group>";
@@ -139,6 +141,7 @@
 			isa = PBXGroup;
 			children = (
 				445EC2EE2A9FD8D900086EC1 /* ChoreController.swift */,
+				445EC2F42A9FDC8400086EC1 /* ItemController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -223,16 +226,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44FA4E402A328E7A00061F12 /* HoneyDoListTableViewController.swift in Sources */,
 				445EC2F12A9FD93900086EC1 /* Item.swift in Sources */,
-				44FA4E492A32E85F00061F12 /* HoneyDetailTableViewCell.swift in Sources */,
+				445EC2F52A9FDC8400086EC1 /* ItemController.swift in Sources */,
 				445EC2F32A9FD9F800086EC1 /* Honey.swift in Sources */,
-				44FA4E472A32E81500061F12 /* HoneyDoDetailTableViewController.swift in Sources */,
-				44FA4E422A32900600061F12 /* HoneyTableViewCell.swift in Sources */,
 				44FA4E242A3287B600061F12 /* AppDelegate.swift in Sources */,
 				445EC2EF2A9FD8D900086EC1 /* ChoreController.swift in Sources */,
 				44FA4E262A3287B600061F12 /* SceneDelegate.swift in Sources */,
 				44FA4E3A2A32883800061F12 /* Constants.swift in Sources */,
+				445EC2F72A9FDE5100086EC1 /* HoneyListTableViewController.swift in Sources */,
+				445EC2FD2A9FE3F100086EC1 /* HoneyDetailTableViewCell.swift in Sources */,
+				445EC2FB2A9FE3E100086EC1 /* HoneyDetailTableViewController.swift in Sources */,
+				445EC2F92A9FDE8600086EC1 /* HoneyListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
