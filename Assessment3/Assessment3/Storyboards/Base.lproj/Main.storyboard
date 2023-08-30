@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AER-Al-VHs">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AER-Al-VHs">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -28,6 +29,9 @@
                                     <rect key="frame" x="306.33333333333331" y="12" width="74.666666666666686" height="41"/>
                                     <state key="normal" title="Button"/>
                                     <buttonConfiguration key="configuration" style="filled" title="Create"/>
+                                    <connections>
+                                        <action selector="createHoneyDo:" destination="JkW-CM-I8b" eventType="touchUpInside" id="4B8-z4-TQD"/>
+                                    </connections>
                                 </button>
                             </subviews>
                             <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
@@ -57,6 +61,9 @@
                                             </constraints>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="checkmark.diamond" catalog="system"/>
+                                            <connections>
+                                                <action selector="completeButtonTapped:" destination="W5z-S1-yxt" eventType="touchUpInside" id="EPr-5H-Sab"/>
+                                            </connections>
                                         </button>
                                         <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="V2O-aP-hJE">
                                             <rect key="frame" x="100" y="4" width="258.66666666666669" height="92"/>
@@ -87,6 +94,9 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="completeButton" destination="Zqn-KP-Bwz" id="v3R-Jh-P10"/>
+                                    <outlet property="nameLabel" destination="l86-fn-qrb" id="QP1-rO-CLx"/>
+                                    <outlet property="tasksCountLabel" destination="ia7-NP-w0m" id="Cr1-Xd-B3M"/>
                                     <segue destination="9Wm-uW-dZB" kind="show" identifier="toDetailVC" id="1NE-Hl-eHG"/>
                                 </connections>
                             </tableViewCell>
@@ -97,6 +107,9 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Honey-Do" id="fjB-WK-arv"/>
+                    <connections>
+                        <outlet property="nameTextField" destination="G0R-f9-PhP" id="4Tu-48-euw"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZKq-XW-18A" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

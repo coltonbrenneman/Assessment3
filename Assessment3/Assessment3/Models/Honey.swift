@@ -2,29 +2,29 @@
 //  Honey.swift
 //  Assessment3
 //
-//  Created by Colton Brenneman on 6/8/23.
+//  Created by Colton Brenneman on 8/30/23.
 //
 
 import Foundation
 
 class Honey: Codable {
     
-    var choreName: String
-    var choreCount: Int
-    var isCompleted: Bool
-    let uuid: UUID
+    let honeyName: String
+    var honeyItem: [Item]
+    var honeyCompleted: Bool
+    let honeyUUID: UUID
     
-    init(choreName: String, choreCount: Int, isCompleted: Bool = false, uuid: UUID = UUID()) {
-        self.choreName = choreName
-        self.choreCount = choreCount
-        self.isCompleted = isCompleted
-        self.uuid = uuid
+    init(honeyName: String, honeyItem: [Item] = [], honeyCompleted: Bool = false, honeyUUID: UUID = UUID()) {
+        self.honeyName = honeyName
+        self.honeyItem = honeyItem
+        self.honeyCompleted = honeyCompleted
+        self.honeyUUID = honeyUUID
     }
-} //end of class
+} // End of class
 
-// MARK: - Extensions
+// MARK: - Extension
 extension Honey: Equatable {
     static func == (lhs: Honey, rhs: Honey) -> Bool {
-        return lhs.uuid == rhs.uuid
+        return lhs.honeyUUID == rhs.honeyUUID
     }
-}
+} // End of extension

@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		445EC2EF2A9FD8D900086EC1 /* ChoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EC2EE2A9FD8D900086EC1 /* ChoreController.swift */; };
+		445EC2F12A9FD93900086EC1 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EC2F02A9FD93900086EC1 /* Item.swift */; };
+		445EC2F32A9FD9F800086EC1 /* Honey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 445EC2F22A9FD9F800086EC1 /* Honey.swift */; };
 		44FA4E242A3287B600061F12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E232A3287B600061F12 /* AppDelegate.swift */; };
 		44FA4E262A3287B600061F12 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E252A3287B600061F12 /* SceneDelegate.swift */; };
 		44FA4E2B2A3287B600061F12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44FA4E292A3287B600061F12 /* Main.storyboard */; };
@@ -17,11 +20,12 @@
 		44FA4E422A32900600061F12 /* HoneyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E412A32900600061F12 /* HoneyTableViewCell.swift */; };
 		44FA4E472A32E81500061F12 /* HoneyDoDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E462A32E81500061F12 /* HoneyDoDetailTableViewController.swift */; };
 		44FA4E492A32E85F00061F12 /* HoneyDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E482A32E85F00061F12 /* HoneyDetailTableViewCell.swift */; };
-		44FA4E4B2A32E88600061F12 /* Honey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E4A2A32E88600061F12 /* Honey.swift */; };
-		44FA4E4D2A32E88F00061F12 /* HoneyController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44FA4E4C2A32E88F00061F12 /* HoneyController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		445EC2EE2A9FD8D900086EC1 /* ChoreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoreController.swift; sourceTree = "<group>"; };
+		445EC2F02A9FD93900086EC1 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		445EC2F22A9FD9F800086EC1 /* Honey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Honey.swift; sourceTree = "<group>"; };
 		44FA4E202A3287B600061F12 /* Assessment3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Assessment3.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44FA4E232A3287B600061F12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44FA4E252A3287B600061F12 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -34,8 +38,6 @@
 		44FA4E412A32900600061F12 /* HoneyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyTableViewCell.swift; sourceTree = "<group>"; };
 		44FA4E462A32E81500061F12 /* HoneyDoDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyDoDetailTableViewController.swift; sourceTree = "<group>"; };
 		44FA4E482A32E85F00061F12 /* HoneyDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyDetailTableViewCell.swift; sourceTree = "<group>"; };
-		44FA4E4A2A32E88600061F12 /* Honey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Honey.swift; sourceTree = "<group>"; };
-		44FA4E4C2A32E88F00061F12 /* HoneyController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HoneyController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +51,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		441F90D42A982BF5006E209E /* HoneyList */ = {
+			isa = PBXGroup;
+			children = (
+				44FA4E3F2A328E7A00061F12 /* HoneyDoListTableViewController.swift */,
+				44FA4E412A32900600061F12 /* HoneyTableViewCell.swift */,
+			);
+			path = HoneyList;
+			sourceTree = "<group>";
+		};
+		441F90D52A982C05006E209E /* HoneyDetail */ = {
+			isa = PBXGroup;
+			children = (
+				44FA4E462A32E81500061F12 /* HoneyDoDetailTableViewController.swift */,
+				44FA4E482A32E85F00061F12 /* HoneyDetailTableViewCell.swift */,
+			);
+			path = HoneyDetail;
+			sourceTree = "<group>";
+		};
 		44FA4E172A3287B600061F12 = {
 			isa = PBXGroup;
 			children = (
@@ -100,7 +120,8 @@
 		44FA4E3B2A32885200061F12 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				44FA4E4A2A32E88600061F12 /* Honey.swift */,
+				445EC2F02A9FD93900086EC1 /* Item.swift */,
+				445EC2F22A9FD9F800086EC1 /* Honey.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -108,7 +129,6 @@
 		44FA4E3C2A32885600061F12 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				44FA4E452A32E78300061F12 /* CustomCells */,
 				44FA4E3E2A32886300061F12 /* ViewControllers */,
 				44FA4E3D2A32885A00061F12 /* ModelControllers */,
 			);
@@ -118,7 +138,7 @@
 		44FA4E3D2A32885A00061F12 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
-				44FA4E4C2A32E88F00061F12 /* HoneyController.swift */,
+				445EC2EE2A9FD8D900086EC1 /* ChoreController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -126,19 +146,10 @@
 		44FA4E3E2A32886300061F12 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				44FA4E3F2A328E7A00061F12 /* HoneyDoListTableViewController.swift */,
-				44FA4E462A32E81500061F12 /* HoneyDoDetailTableViewController.swift */,
+				441F90D42A982BF5006E209E /* HoneyList */,
+				441F90D52A982C05006E209E /* HoneyDetail */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		44FA4E452A32E78300061F12 /* CustomCells */ = {
-			isa = PBXGroup;
-			children = (
-				44FA4E412A32900600061F12 /* HoneyTableViewCell.swift */,
-				44FA4E482A32E85F00061F12 /* HoneyDetailTableViewCell.swift */,
-			);
-			path = CustomCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -213,14 +224,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				44FA4E402A328E7A00061F12 /* HoneyDoListTableViewController.swift in Sources */,
-				44FA4E4B2A32E88600061F12 /* Honey.swift in Sources */,
+				445EC2F12A9FD93900086EC1 /* Item.swift in Sources */,
 				44FA4E492A32E85F00061F12 /* HoneyDetailTableViewCell.swift in Sources */,
+				445EC2F32A9FD9F800086EC1 /* Honey.swift in Sources */,
 				44FA4E472A32E81500061F12 /* HoneyDoDetailTableViewController.swift in Sources */,
 				44FA4E422A32900600061F12 /* HoneyTableViewCell.swift in Sources */,
 				44FA4E242A3287B600061F12 /* AppDelegate.swift in Sources */,
+				445EC2EF2A9FD8D900086EC1 /* ChoreController.swift in Sources */,
 				44FA4E262A3287B600061F12 /* SceneDelegate.swift in Sources */,
 				44FA4E3A2A32883800061F12 /* Constants.swift in Sources */,
-				44FA4E4D2A32E88F00061F12 /* HoneyController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
